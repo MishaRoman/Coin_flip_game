@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+namespace App;
 
 class Player
 {
@@ -37,7 +39,7 @@ class Player
 
 	public function isBancrupt(): bool
 	{
-		return $this->getMoney() === 0;
+		return $this->getMoney() < 1;
 	}
 
 	public function chanceToWin(Player $player): float

@@ -1,7 +1,9 @@
 <?php 
 
-include 'Player.php';
-include 'Game.php';
+include './vendor/autoload.php';
+
+use App\Player;
+use App\Game;
 
 $player1 = new Player('first', 20);
 

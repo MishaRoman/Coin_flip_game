@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Game
 {
 	public Player $player1;
@@ -20,6 +22,7 @@ class Game
 		echo <<<EOT
 			{$this->player1->getName()} chance: {$player1Chance}%
 			{$this->player2->getName()} chance: {$player2Chance}%
+			
 		EOT;
 
 		$this->play();
